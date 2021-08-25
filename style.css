@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); /*8 bit font */
+body {
+    background-color: #df915e;
+}
+#title {
+    font-family: 'VT323', monospace;
+    font-size: 90px;
+    color: aliceblue;
+    text-align: center;
+}
+#calculatorContainer {
+    display: flex;
+    background-color: aliceblue;
+    height: 650px;
+    width: 500px;
+}
+
