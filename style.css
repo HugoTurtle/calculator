@@ -32,10 +32,11 @@ body {
 #displayScreen{
     display: flex;
     background-color: white;
-    height: auto;
     width: 100%;
-    align-content: center;
     border: 10px solid grey;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 100px;
 }
 #buttonContainer {
     display: flex;  
