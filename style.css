@@ -11,11 +11,45 @@ body {
     font-size: 90px;
     color: aliceblue;
     text-align: center;
+    padding-bottom: 40px;
 }
 #calculatorContainer {
     display: flex;
+    justify-content: center;
+}
+#calculator {
     background-color: aliceblue;
-    height: 650px;
+    border: 5px solid black;
+    border-radius: 5px;
+    height: 630px;
     width: 500px;
 }
+#displayScreen {
+    background-color: black;
+    height: 150px;
+}
+#buttonContainer {
+    display: flex;  
+    background-color: red;
+    height: 463px;
+}
+#numberpadContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    width: 80%;
+    height: 300px;
+    background-color: blue;
+}
+.buttonNumPad {
+    width: 30%;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #e0af8e;
+    padding: 0px;
+    margin: 0px;
+}
 
+
+ 
