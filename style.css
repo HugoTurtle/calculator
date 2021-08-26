@@ -31,11 +31,11 @@ body {
 }
 #displayScreen{
     display: flex;
-    background-color: grey;
-    height: 80%;
+    background-color: white;
+    height: auto;
     width: 100%;
     align-content: center;
-    border: 10px solid black;
+    border: 10px solid grey;
 }
 #buttonContainer {
     display: flex;  
