@@ -16,15 +16,15 @@ function operate(num1, num2) {
     return add(num1,num2);
 }
 //Number Pad Functions
+const displayScreen = document.getElementById("displayScreen");
 let displayValues = "";
 
 for(let i = 0; i < 10; ++i) {
     let numberpadButton = document.getElementById(i);
     numberpadButton.onclick = function() {
         displayValues += i;
-            const displayNumber = document.getElementById("displayScreen")
-                displayNumber.textContent === "0" ? displayNumber.textContent = "" : "0" //Checks if there's a 0 in the displayScreen
-                    displayNumber.textContent += i;
+            displayScreen.textContent === "0" ? displayScreen.textContent = "" : "0"; //Checks if there's a 0 in the displayScreen
+                displayScreen.textContent += i;
     }
 }
 
@@ -34,6 +34,9 @@ for(let i = 0; i < 10; ++i) {
      const operatorButtons = document.querySelectorAll("button.operatorButton")
      operatorButtons.forEach(function(button) {
         button.onclick = function() {
+            if(operatorSymbol != "") {
+                
+            }
             switch(button.textContent) {
                 case "+":
                     operatorSymbol = "+" 
@@ -49,7 +52,10 @@ for(let i = 0; i < 10; ++i) {
                     break;
                 case "=":
                     alert("Under Construction");
+                    //Will run a function
+                    break;
             }
+            displayScreen.textContent += operatorSymbol;
         }
      });
  
