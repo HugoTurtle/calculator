@@ -28,4 +28,30 @@ for(let i = 0; i < 10; ++i) {
     }
 }
 
+ //Operator Functions
+ let operatorSymbol = "";
+ 
+     const operatorButtons = document.querySelectorAll("button.operatorButton")
+     operatorButtons.forEach(function(button) {
+        button.onclick = function() {
+            switch(button.textContent) {
+                case "+":
+                    operatorSymbol = "+" 
+                    break;
+                case "-":
+                    operatorSymbol = "-" 
+                    break;
+                case "*": 
+                    operatorSymbol = "*"
+                    break;
+                case "/":
+                    operatorSymbol = "/"
+                    break;
+                case "=":
+                    alert("Under Construction");
+            }
+        }
+     });
+ 
+
 
