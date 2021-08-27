@@ -19,10 +19,12 @@ function operate(num1, num2) {
 let displayValues = "";
 
 for(let i = 0; i < 10; ++i) {
-    let tempNumber = document.getElementById(i);
-    tempNumber.onclick = function() {
+    let numberpadButton = document.getElementById(i);
+    numberpadButton.onclick = function() {
         displayValues += i;
-            console.log(displayValues);
+            const displayNumber = document.getElementById("displayScreen")
+                displayNumber.textContent === "0" ? displayNumber.textContent = "" : "0" //Checks if there's a 0 in the displayScreen
+                    displayNumber.textContent += i;
     }
 }
 
