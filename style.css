@@ -92,6 +92,12 @@ button {
 #clearButton {
     background-color: red;
 }
-
+button:hover {
+    background-color: #c7a393;
+    border: 4px solid transparent;
+}
+button:disabled {
+    color: black;
+}
 
  
