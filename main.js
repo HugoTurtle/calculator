@@ -34,9 +34,6 @@ for(let i = 0; i < 10; ++i) {
      const operatorButtons = document.querySelectorAll("button.operatorButton")
      operatorButtons.forEach(function(button) {
         button.onclick = function() {
-            if(operatorSymbol != "") {
-                
-            }
             switch(button.textContent) {
                 case "+":
                     operatorSymbol = "+" 
