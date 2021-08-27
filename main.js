@@ -29,10 +29,10 @@ for(let i = 0; i < 10; ++i) {
 }
 
  //Operator Functions
- let operatorSymbol = "";
+let operatorSymbol = "";
  
-     const operatorButtons = document.querySelectorAll("button.operatorButton")
-     operatorButtons.forEach(function(button) {
+const operatorButtons = document.querySelectorAll("button.operatorButton")
+    operatorButtons.forEach(function(button) {
         button.onclick = function() {
             switch(button.textContent) {
                 case "+":
@@ -55,6 +55,12 @@ for(let i = 0; i < 10; ++i) {
             displayScreen.textContent += operatorSymbol;
         }
      });
+
+//Equals function
+function equalsButton(firstNumber, operator, secondNumber) {
+    return answer = Number(firstNumber) + operator + Number(secondNumber);
+}
+console.log(equalsButton("1", "+", "2"))
  
 
 
