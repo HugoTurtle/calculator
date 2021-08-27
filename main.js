@@ -15,4 +15,15 @@ function divide(num1, num2) {
 function operate(num1, num2) {
     return add(num1,num2);
 }
-console.log(operate(5,4));
+//Number Pad Functions
+let displayValues = "";
+
+for(let i = 0; i < 10; ++i) {
+    let tempNumber = document.getElementById(i);
+    tempNumber.onclick = function() {
+        displayValues += i;
+            console.log(displayValues);
+    }
+}
+
+
