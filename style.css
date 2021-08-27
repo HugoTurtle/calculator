@@ -59,19 +59,19 @@ body {
     align-items: center;
 }
 .buttonNumPad {
-    width: 30%;
-    height: 80px;
+    width: 120px;
+    height: 90px;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: #e0af8e;
+    background-color: rgb(224, 175, 142);
     margin: 3px;
 }
 .operatorButton {
-    width: auto;
+    width: 70px;
     height: 80px;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: #e0af8e;
+    background-color: rgb(224, 175, 142);
 }
 #operatorContainer {
     display: flex;
@@ -79,7 +79,7 @@ body {
     height: 100%;
     width: 100px;
     justify-content: space-around;
-    margin-left: -20px;
+    margin-left: 10px;
 }
 
 
