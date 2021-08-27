@@ -34,6 +34,12 @@ let operatorSymbol = "";
 const operatorButtons = document.querySelectorAll("button.operatorButton")
     operatorButtons.forEach(function(button) {
         button.onclick = function() {
+            if(operatorSymbol === "") {
+                for(let i = 0; i < operatorButtons.length; i++) {
+                    operatorButtons[i].disabled = true;
+                    operatorButtons[4].disabled = false; //Equals Button
+                }
+            }
             switch(button.textContent) {
                 case "+":
                     operatorSymbol = "+" 
