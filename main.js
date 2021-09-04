@@ -1,4 +1,11 @@
-//Basic Math Functions//
+//Variables
+
+let displayValues = "";
+let operatorSymbol = ""; 
+let firstNumber = "";
+let secondNumber = "";
+
+    //Basic Math Functions//
 function add(num1, num2) {
     return num1 + num2;
 }
@@ -11,14 +18,9 @@ function multiply(num1, num2) {
 function divide(num1, num2) {
     return num1 / num2;
 }
-//Operate Function//
-function operate(num1, num2) {
-    return add(num1,num2);
-}
+
 //Number Pad Functions
 const displayScreen = document.getElementById("displayScreen");
-let displayValues = "";
-
 for(let i = 0; i < 10; ++i) {
     let numberpadButton = document.getElementById(i);
     numberpadButton.onclick = function() {
@@ -29,8 +31,6 @@ for(let i = 0; i < 10; ++i) {
 }
 
  //Operator Functions
-let operatorSymbol = "";
- 
 const operatorButtons = document.querySelectorAll("button.operatorButton")
     operatorButtons.forEach(function(button) {
         button.onclick = function() {
@@ -43,30 +43,33 @@ const operatorButtons = document.querySelectorAll("button.operatorButton")
             switch(button.textContent) {
                 case "+":
                     operatorSymbol = "+" 
+                    displayScreen.textContent += operatorSymbol;
                     break;
                 case "-":
                     operatorSymbol = "-" 
+                    displayScreen.textContent += operatorSymbol;
                     break;
                 case "*": 
                     operatorSymbol = "*"
+                    displayScreen.textContent += operatorSymbol;
                     break;
                 case "/":
                     operatorSymbol = "/"
+                    displayScreen.textContent += operatorSymbol;
                     break;
                 case "=":
                     alert("Under Construction");
                     //Will run a function
                     break;
             }
-            displayScreen.textContent += operatorSymbol;
         }
      });
 
-//Equals function
-function equalsButton(firstNumber, operator, secondNumber) {
-    return answer = Number(firstNumber) + operator + Number(secondNumber);
-}
-console.log(equalsButton("1", "+", "2"))
+    // //Equals function
+    // function equalsButton(firstNumber, operator, secondNumber) {
+    //     return answer = Number(firstNumber) + operator + Number(secondNumber);
+    // }
+    // console.log(equalsButton("1", "+", "2"))
  
 
 
