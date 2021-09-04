@@ -64,12 +64,6 @@ const operatorButtons = document.querySelectorAll("button.operatorButton")
             }
         }
      });
-
-    // //Equals function
-    // function equalsButton(firstNumber, operator, secondNumber) {
-    //     return answer = Number(firstNumber) + operator + Number(secondNumber);
-    // }
-    // console.log(equalsButton("1", "+", "2"))
  
 
 
